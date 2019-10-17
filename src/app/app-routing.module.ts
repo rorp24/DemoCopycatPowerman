@@ -7,7 +7,7 @@ import { PageComponent } from './page/page.component';
 const routes: Routes = [  
   {path:'', component: HomeComponent},
   {path:'home', component: HomeComponent},
-  {path:'page', component: PageComponent}
+  {path:'pages/:pageId', component: PageComponent}
 ];
 
 @NgModule({

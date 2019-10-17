@@ -1,8 +1,10 @@
 #body {
-    width: 100%;
+    width: 80%;
     background-color: #333;
     overflow: visible;
     position: fixed;
+    padding-left: 10%;
+    padding-right: 10%;
     /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1;
     /* Stay on top */
