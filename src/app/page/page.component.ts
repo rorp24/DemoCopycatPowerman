@@ -12,10 +12,14 @@ export class PageComponent implements OnInit {
   constructor(
     private Route:ActivatedRoute
   ) { 
-    this.id = this.Route.snapshot.paramMap.get('pageId');
+    
   }
 
-  ngOnInit() {
+  ngOnInit(){ //uniquement la première fois que le composent est chargé
+    
   }
 
+  ngDoCheck(){ //load a chaque changement du composant
+    this.id = this.Route.snapshot.params['pageId'];
+  }
 }

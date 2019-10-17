@@ -1,17 +1,17 @@
 <div id="body">
-    <a>Contact</a>
-    <a>Athletes</a>
+    <a [routerLink]="['/pages','contact']">Contact</a>
+    <a [routerLink]="['/pages','athletes']">Athletes</a>
     <div class="cascade">
-        <a>Race</a>
+        <a [routerLink]="['/pages','race']">Race</a>
         <div class="cascade-content">
-            <a>ranking & result</a>
+            <a [routerLink]="['/pages','rar']">ranking & result</a>
         </div>
     </div>
     <div class="cascade">
         <a [routerLink]="['/']">Home</a>
         <div class="cascade-content">
-            <a>news</a>
-            <a>about</a>
+            <a [routerLink]="['/pages','news']">news</a>
+            <a [routerLink]="['/pages','about']">about</a>
         </div>
     </div>
 </div>
